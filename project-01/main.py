@@ -1,0 +1,1 @@
+print("This is my first project of 2026!")
