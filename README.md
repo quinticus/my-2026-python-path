@@ -1,5 +1,4 @@
 # My 2026 Python Path
----
 One of my New Year’s Resolutions for 2026 is to become good at Python enough to have it automate various tasks in my life. I’ve been using the language on and off now for about a few years, and even had AI do all the scripting and coding for me, but I figured it was about time I decide to fully master the language as I relearn some old concepts and learn newer concepts I’ve never learned before.
 
 Throughout all of 2026, I will have to make one project for every **two weeks**. Near the end of that project’s timeline, I will reflect on myself using this neat template from the awesome article [by AlgoCademy](https://algocademy.com/blog/how-practice-alone-wont-make-you-better-the-role-of-reflection-in-problem-solving/).
