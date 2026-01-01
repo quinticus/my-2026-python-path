@@ -19,7 +19,8 @@ I’m a little shy to make this public as there will be a lot of rookie mistakes
 
 I am using VSCode on Windows 11 but I intend to switch to Linux and use some other code editor that doesn’t belong to Microsoft at some point. There might be a hiccup in my consistency here and there because of the switch.
 ## Project Gallery
+**Current Project**: Color Inverter [01]
 
-| Project # | Title | Gist |
-| --------- | ----- | ---- |
-|           |       |      |
+| Project # | Title                                        | Gist                                             |
+| --------- | -------------------------------------------- | ------------------------------------------------ |
+| 01        | [Color Inverter](project-01/project_01.md)   | RGB values placed return the inverted RGB values |
