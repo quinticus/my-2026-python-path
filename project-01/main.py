@@ -4,13 +4,6 @@ from tkinter import colorchooser
 selected_color = ()
 inverted_color = ()
 
-def get_color():
-  global selected_color
-  color_code = colorchooser.askcolor(title='Color to be inverted')
-  print(color_code[0])
-  selected_color = color_code[0]
-  show_color.config(text=f'Selected Color: {selected_color}')
-
 def invert_color():
   global selected_color
   global inverted_color
@@ -20,14 +13,21 @@ def invert_color():
   inverted_color = (inverted_r, inverted_g, inverted_b)
   show_invert.config(text=f"Inverted Color: {inverted_color}")
 
-root = Tk()
+def get_color():
+  global selected_color
+  color_code = colorchooser.askcolor(title='Color to be inverted')
+  selected_color = color_code[0]
+  show_color.config(text=f'Selected Color: {selected_color}')
+  invert_color()
 
-### COLUMN 0 ###
-l1 = Label(
+root = Tk()
+root.title("Color Inverter")
+
+label = Label(
   root,
-  text='Enter your color of choice'
+  text='Use the buttton below to pick a color.'
 )
-l1.grid(row=0, column=0)
+label.grid(row=0, column=0)
 
 color_button = Button(
   root,
@@ -38,28 +38,14 @@ color_button.grid(row=1, column=0)
 
 show_color = Label(
   root,
-  text="Select a color!"
+  text=None
 )
 show_color.grid(row=2, column=0)
 
-### COLUMN 1 ###
-l2 = Label(
-  root,
-  text='Below is the inverted color'
-)
-l2.grid(row=0, column=1)
-
-invert_button = Button(
-  root,
-  text='Get Inverted Color',
-  command=invert_color
-)
-invert_button.grid(row=1, column=1)
-
 show_invert = Label(
   root,
-  text='Pick the color first!'
+  text=None
 )
-show_invert.grid(row=2, column=1)
+show_invert.grid(row=3, column=0)
 
 root.mainloop()

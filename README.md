@@ -3,14 +3,14 @@ One of my New Year’s Resolutions for 2026 is to become good at Python enough t
 
 Throughout all of 2026, I will have to make one project for every **two weeks**. Near the end of that project’s timeline, I will reflect on myself using this neat template from the awesome article [by AlgoCademy](https://algocademy.com/blog/how-practice-alone-wont-make-you-better-the-role-of-reflection-in-problem-solving/).
 
-```text
+```md
 Reflection Template:
-1. Problem Summary: [Brief description of the problem]
-2. My Approach: [Steps taken to solve the problem]
-3. Challenges Faced: [List of difficulties encountered]
-4. Key Learnings: [New concepts or techniques learned]
-5. Future Applications: [How this learning can be applied to other problems]
-6. Areas for Improvement: [Skills or concepts to focus on next]
+1. **Problem Summary**: [Brief description of the problem]
+2. **My Approach**: [Steps taken to solve the problem]
+3. **Challenges Faced**: [List of difficulties encountered]
+4. **Key Learnings**: [New concepts or techniques learned]
+5. **Future Applications**: [How this learning can be applied to other problems]
+6. **Areas for Improvement**: [Skills or concepts to focus on next]
 ```
 
 I will use AI as a tutor to help me reflect and answer a lot of my somewhat specific questions, but I will **NEVER** have AI write me a _single_ line of code throughout my 2026 path.
