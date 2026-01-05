@@ -1,7 +1,5 @@
 from tkinter import *
-from tkinter import colorchooser
-from tkinter import filedialog
-from tkinter import ttk
+from tkinter import colorchooser, filedialog, ttk
 from PIL import ImageTk, Image, ImageChops
 
 # ------------- #
@@ -33,51 +31,78 @@ def show_info(original, inverted, mode):
 
   if mode == 'color':
     pass
+
   elif mode == 'image':
+    # `tk_` means they're to be shown in Label
     tk_image = ImageTk.PhotoImage(original)
     tk_inverted = ImageTk.PhotoImage(inverted)
 
+    left_output.config(image=tk_image)
+    left_output.image = tk_image
+    right_output.config(image=tk_inverted)
+    right_output.image = tk_inverted
+    
+
 def invert_color(color):
   print(f"User is now inverting color ({color})")
+
   inverted_r = 255 - color[0]
   inverted_g = 255 - color[1]
   inverted_b = 255 - color[2]
   inverted_color = (inverted_r, inverted_g, inverted_b)
+
   print(f"Color has now been converted ({inverted_color}).")
   return inverted_color
 
 def pick_color():
   print("User is selecting color.")
   selected_color = colorchooser.askcolor(title="Color to be Inverted")[0]
-  print(f"User selected color {selected_color}.")
+
+  if selected_color:
+    print(f"User selected color {selected_color}.")
+
+  else:
+    print("User changed their mind.")
+
   inverted_color = invert_color(selected_color)
   show_info(selected_color, inverted_color, 'color')
+
 
 def invert_image(image):
   print(f"Image is now being inverted ({image}).")
   opened_image = Image.open(image)
   print(f"Image has now been opened ({opened_image}).")
+
+  if opened_image.mode == 'RGBA':
+    opened_image = opened_image.convert('RGB')
+
+  print("Properly converted image for inversion.")
   inverted_image = ImageChops.invert(opened_image)
   print(f"Image has now been inverted ({inverted_image}).")
 
-  return inverted_image
+  return opened_image, inverted_image
+
 
 def get_image():
   print(f"User chose to send image.")
+
   filetypes = (
     ('.PNG Image', '*.png'),
     ('.JPEG Image', '*.jpeg'),
-    ('.WEBP Image', '*.webp') # fuck you webp is ass
+    ('.WEBP Image', '*.webp')
   )
 
-  image = filedialog.askopenfilename(
+  image_path = filedialog.askopenfilename(
     title='Image to be inverted',
     initialdir='/',
     filetypes=filetypes
   )
-  print(f"User picked image {image}")
-  inverted_image = invert_image(image)
-  show_info(image, inverted_image, 'image')
+
+  if image_path:
+    original_image, inverted_image = invert_image(image_path)
+    print(f"User picked image {image_path}")
+    show_info(original_image, inverted_image, 'image')
+
 
 # -------------- #
 # --- WINDOW --- #
