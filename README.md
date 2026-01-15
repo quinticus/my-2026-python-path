@@ -16,8 +16,6 @@ Reflection Template:
 I will use AI as a tutor to help me reflect and answer a lot of my somewhat specific questions, but I will **NEVER** have AI write me a _single_ line of code throughout my 2026 path.
 
 I’m a little shy to make this public as there will be a lot of rookie mistakes and terrible code for the world to see, but I think it’s worth it. Not only will I see myself slowly improve, but so will others. You’re free to message me on any of my socials or submit a pull request to let me know of concepts I should know to improve, or if just feel like flaming my code (I wouldn’t blame you).
-
-I am using VSCode on Windows 11 but I intend to switch to Linux and use some other code editor that doesn’t belong to Microsoft at some point. There might be a hiccup in my consistency here and there because of the switch.
 ## Project Gallery
 **Current Project**: Color Inverter [01]
 
