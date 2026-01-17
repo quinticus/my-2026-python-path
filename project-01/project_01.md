@@ -1,9 +1,9 @@
-# Project 01: Color Inverter
+# Project #1: Color Inverter
+**Due Date**: 1/17/26
+
 **Description**: The user will place down RGB values. After submitting the values, a new color value will be returned, with this new value being the inverted version of the color you placed.
 
 **What I'm Testing**: I've never made a full-blown GUI before. After all my time of using Python, I've been using the console, and those weren't cool CLI apps either. So, I'll be _experimenting with Tkinter_. I'll be using it for a few projects while I learn the ropes of the module, starting with this.
-
-**Due Date**: 1/17/26
 ## Reflection
 1. **Problem Summary**: This project was meant to just invert the RGB values of whatever the user placed, but after having completed that rather easily, I chose to add onto the project by inverting the image sent by the user. 
 
@@ -18,4 +18,4 @@
 
 6. **Areas for Improvement**: My **consistency** throughout the first project has been very poor. as you can see by the commit history from January 3 to the day of writing (January 17), I’ve made about five commits (some not even related to the code but the Markdown files). And, while the image inversion part “works”, the user needs to close the app and reopen it to place another image. Some other images simply just turn into a solid color when trying to invert it.
 
-**Overall**: I could’ve done much better. I’m left with a semi-functional color inverting app. I’ll focus on paying attention to what I’m doing to data types, pseudo-code and plan out what I want to write first, and actually remain dedicated to the craft of coding.
+**Overall Thoughts**: I could’ve done much better. I’m left with a semi-functional color inverting app. I’ll focus on paying attention to what I’m doing to data types, pseudo-code and plan out what I want to write first, and actually remain dedicated to the craft of coding.
