@@ -1,5 +1,6 @@
 # Project #2: File Transfer
 **Start Date**: 1/18/26
+
 **Due Date**: 1/31/26
 
 **Description**: The user selects a folder in their device/peripheral. Then, they have the choice to select a file or multiple files from there. Then they have three choices: Move To, Copy To, and Delete. Delete is self-explanatory, but selecting Move or Copy To will have the user type a different path to then transfer the selected file(s) to that path.
