@@ -42,7 +42,6 @@ def show_info(original, inverted, mode):
     right_output.config(image=tk_inverted)
     right_output.image = tk_inverted
     
-
 def invert_color(color):
   print(f"User is now inverting color ({color})")
 
