@@ -17,8 +17,10 @@ I will use AI as a tutor to help me reflect and answer a lot of my somewhat spec
 
 I’m a little shy to make this public as there will be a lot of rookie mistakes and terrible code for the world to see, but I think it’s worth it. Not only will I see myself slowly improve, but so will others. You’re free to message me on any of my socials or submit a pull request to let me know of concepts I should know to improve, or if just feel like flaming my code (I wouldn’t blame you).
 ## Project Gallery
-**Current Project**: Color Inverter [01]
+**Current Project**: ???
+**Project Due Date**: 1/31/26
 
 | Project # | Title                                        | Gist                                             |
 | --------- | -------------------------------------------- | ------------------------------------------------ |
 | 01        | [Color Inverter](project-01/project_01.md)   | RGB values placed return the inverted RGB values |
+| 02        | ???                                          | ???                                              |
