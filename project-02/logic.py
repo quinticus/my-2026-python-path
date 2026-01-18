@@ -12,7 +12,7 @@ def validate_directory(path_string: str) -> Path | None:
   
   return None
 
-def get_items_from_directory(directory: Path) -> list[path]:
+def get_items_from_directory(directory: Path) -> list[Path]:
   files: list[Path] = []
 
   for item in directory.iterdir():
