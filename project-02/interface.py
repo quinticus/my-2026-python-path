@@ -19,7 +19,7 @@ def get_path() -> str:
       console.clear()
       return entered_directory
 
-def file_picker(directory: Path):
+def file_picker(directory: Path) -> list[Path]:
   files = logic.get_items_from_directory(directory)
   if len(files) == 0:
     # If there's nothing here, then we'll add a safeguard.
@@ -48,3 +48,12 @@ def file_picker(directory: Path):
     return []
 
   return [file_dictionary[name] for name in selected_files]
+
+def mode_select() -> str:
+  # `transfer_file` in logic.py handles the logic, just ask the user
+  modes = ["Move", "Copy"]
+  selected_mode = questionary.select(
+    "Would you like to move or copy files?",
+    choices=modes
+  )
+  return selected_mode.ask().lower()

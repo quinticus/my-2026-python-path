@@ -3,11 +3,13 @@ from rich.progress import track
 import logic
 import interface
 
-src_path_str = interface.get_path()
-dest_path_str = interface.get_path()
+source_dir_str = interface.get_path()
+source_dir = logic.validate_directory(source_dir_str)
 
-SOURCE_DIR = logic.validate_directory(src_path_str)
-DESTINATION_DIR = logic.validate_directory(dest_path_str)
+selected_files = interface.file_picker(source_dir)
 
-selected_src_files = interface.file_picker(SOURCE_DIR)
-selected_dest_files = interface.file_picker(DESTINATION_DIR)
+dir_destination_str = interface.get_path()
+dir_destination = logic.validate_directory(dir_destination_str)
+
+mode = interface.mode_select()
+logic.transfer_file(selected_files, dir_destination, mode)
